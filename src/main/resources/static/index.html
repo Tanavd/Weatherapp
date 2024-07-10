@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <main>
+            <div class="search-box">
+                <input type="text" id="city" placeholder="Enter city name" list="recent-cities">
+                <datalist id="recent-cities"></datalist>
+                <button id="get-weather-btn">Get Weather</button>
+            </div>
+            <div id="weather-info"></div>
+        </main>
+        <footer>
+            <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a></p>
+        </footer>
+    </div>
+    <div id="animation-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

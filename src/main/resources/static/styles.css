@@ -1,0 +1,131 @@
+/* Reset some default styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #00796b;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* Main content styling */
+main {
+    text-align: center;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #b2dfdb;
+    border-radius: 8px;
+    width: calc(100% - 22px);
+    max-width: 300px;
+    font-size: 1rem;
+    color: #00796b;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #00796b;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#weather-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.weather-details {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.weather-details h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #00796b;
+}
+
+.weather-details p {
+    font-size: 1.2rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+@keyframes rain {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+@keyframes clouds {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+/* General styling for the body */
+body.rainy {
+    animation: rain 5s linear infinite;
+}
+
+body.cloudy {
+    animation: clouds 10s linear infinite;
+}
